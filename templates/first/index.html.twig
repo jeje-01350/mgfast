@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{ encore_entry_link_tags('app') }}
+    <title>MG Fast 73</title>
+</head>
+<body>
+{#Début de la navbar#}
+<nav>
+    <span><a href="{{ path('home') }}">MG Fast 73</a></span>
+    <ul>
+        <li><a href="{{ path('home') }}#services">Services</a></li>
+        <li><a href="{{ path('home') }}#galery">Réalisations</a></li>
+        <li><a href="{{ path('boutique') }}">Boutique</a></li>
+    </ul>
+</nav>
+{#fin navbar#}
+{#Header#}
+<header>
+    <h1>Nous contactez</h1>
+    <div>
+        <a href="https://leboncoin.fr/"><img src="{{ asset('build/lbc.png') }}" alt="logo leboncoin"> @Mgfast</a>
+        <a href="https://leboncoin.fr/"><i class="fa-brands fa-instagram fa-2xl"></i> @Mgfast</a>
+        <a href="https://leboncoin.fr/"><i class="fa-solid fa-phone fa-2xl"></i> 06-17-02-27-76</a>
+    </div>
+</header>
+{#Fin header#}
+{#Section a propos#}
+<section id="about">
+    <h2>A propos de nous</h2>
+    <p class="presentation">
+        Permettez-moi de vous présenter deux passionnés de moto qui ont décidé de se lancer dans la mécanique moto.
+        Tout d'abord, il y a Ethan G, un jeune homme passionné de motos depuis son adolescence.
+        Il a passé des heures à réparer et à entretenir sa propre moto, acquérant ainsi une grande expérience en mécanique.
+        Ensuite, il y a Ethan M, un motard confirmé qui a parcouru de nombreux kilomètres sur sa moto et a développé
+        un amour pour les machines à deux roues. Ensemble, ils ont décidé de créer leur propre atelier de réparation moto,
+        combinant leur passion pour la moto avec leurs compétences en mécanique. Avec leur expertise et leur dévouement,
+        Les Ethan sont prêts à offrir un service de qualité supérieure à tous les motards qui cherchent à entretenir ou
+        réparer leur moto.
+    </p>
+    <div>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <p>
+                <strong>Ethan guth</strong> <br>
+                Chef de projets, mecanicien depuis maintenant 3ans j'aime
+                faire de ma passion mon métier tout en restant dans un environnement
+                propre
+            </p>
+        </article>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <p>
+                <strong>Ethan Martin--gevolde</strong> <br>
+                Associe, mecanicien depuis maintenant 3ans j'aime
+                faire de ma passion mon métier tout en restant dans un environnement
+                propre
+            </p>
+        </article>
+    </div>
+</section>
+{#Fin Section a propos#}
+{#section services#}
+<section id="services">
+    <h2>Nos services proposés</h2>
+    <div>
+        <card id="1" class="active">bro</card>
+        <card id="2">bri</card>
+    </div>
+    <p id="bro" class="p-service active">bla</p>
+    <p id="bri" class="p-service">blo</p>
+    <p class="contact-p">Si vous souhaitez nous solicités pour un devis ou pour un de nos services veuillez voir plus haut nos coordonnées</p>
+</section>
+{#fin section services #}
+{#Section galerie#}
+<h2>Gallerie de nos réalisations</h2>
+<section class="gallery">
+    <div class="gallery__item">
+        <input type="radio" id="img-1" checked name="gallery" class="gallery__selector"/>
+        <img class="gallery__img" src="https://picsum.photos/id/1015/600/400.jpg" alt=""/>
+        <label for="img-1" class="gallery__thumb"><img src="https://picsum.photos/id/1015/150/100.jpg" alt=""/></label>
+    </div>
+    <div class="gallery__item">
+        <input type="radio" id="img-2" name="gallery" class="gallery__selector"/>
+        <img class="gallery__img" src="https://picsum.photos/id/1039/600/400.jpg" alt=""/>
+        <label for="img-2" class="gallery__thumb"><img src="https://picsum.photos/id/1039/150/100.jpg" alt=""/></label>
+    </div>
+    <div class="gallery__item">
+        <input type="radio" id="img-3" name="gallery" class="gallery__selector"/>
+        <img class="gallery__img" src="https://picsum.photos/id/1057/600/400.jpg" alt=""/>
+        <label for="img-3" class="gallery__thumb"><img src="https://picsum.photos/id/1057/150/100.jpg" alt=""/></label>
+    </div>
+    <div class="gallery__item">
+        <input type="radio" id="img-4" name="gallery" class="gallery__selector"/>
+        <img class="gallery__img" src="https://picsum.photos/id/106/600/400.jpg" alt=""/>
+        <label for="img-4" class="gallery__thumb"><img src="https://picsum.photos/id/106/150/100.jpg" alt=""/></label>
+    </div>
+</section>
+{#Fin sectin gallerie#}
+{#Footer#}
+<footer>
+    <aside>
+        <div>
+            <h3>Nos réseaux</h3>
+            <ul>
+                <li><a href="">leboncoin : mgfast</a></li>
+                <li><a href="">instagram : mgfast</a></li>
+                <li><a href="">telephone : mgfast</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Plan du site</h3>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Boutique</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Nos réseaux</h3>
+            <ul>
+                <li><a href="">leboncoin : mgfast</a></li>
+                <li><a href="">instagram : mgfast</a></li>
+                <li><a href="">telephone : mgfast</a></li>
+            </ul>
+        </div>
+    </aside>
+    <p>© 2022 <a href="https://jeremyrossi.fr">jeremy rossi</a></p>
+</footer>
+{#Fin footer#}
+{{ encore_entry_script_tags('app') }}
+</body>
+</html>
