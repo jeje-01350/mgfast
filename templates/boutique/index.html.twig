@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{ encore_entry_link_tags('app') }}
+    <title>MG Fast 73</title>
+</head>
+<body>
+{#Début de la navbar#}
+<nav>
+    <span><a href="{{ path('home') }}">MG Fast 73</a></span>
+    <ul>
+        <li><a href="{{ path('home') }}#services">Services</a></li>
+        <li><a href="{{ path('home') }}#galery">Réalisations</a></li>
+        <li><a href="{{ path('app_boutique') }}">Boutique</a></li>
+    </ul>
+</nav>
+{#fin navbar#}
+<section id="boutique">
+    <h1>Notre boutique</h1>
+    <div class="boutique-card">
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <h2>125 cr 1989</h2>
+            <p>800€</p>
+            <a href="">Leboncoin</a>
+        </article>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <h2>125 cr 1989</h2>
+            <p>800€</p>
+            <a href="">Leboncoin</a>
+        </article>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <h2>125 cr 1989</h2>
+            <p>800€</p>
+            <a href="">Leboncoin</a>
+        </article>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <h2>125 cr 1989</h2>
+            <p>800€</p>
+            <a href="">Leboncoin</a>
+        </article>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <h2>125 cr 1989</h2>
+            <p>800€</p>
+            <a href="">Leboncoin</a>
+        </article>
+        <article>
+            <img src="{{ asset('build/user.jpg') }}" alt="">
+            <h2>125 cr 1989</h2>
+            <p>800€</p>
+            <a href="">Leboncoin</a>
+        </article>
+    </div>
+</section>
+{#Footer#}
+<footer>
+    <aside>
+        <div>
+            <h3>Nos réseaux :</h3>
+            <ul>
+                <li><a href="">leboncoin : mgfast</a></li>
+                <span> | </span>
+                <li><a href="">instagram : mgfast</a></li>
+                <span> | </span>
+                <li><a href="">telephone : mgfast</a></li>
+            </ul>
+        </div>
+    </aside>
+    <p>© 2022 <a href="https://jeremyrossi.fr">jeremy rossi</a></p>
+</footer>
+{#Fin footer#}
+{{ encore_entry_script_tags('app') }}
+</body>
+</html>
