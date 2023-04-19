@@ -22,42 +22,14 @@
 <section id="boutique">
     <h1>Notre boutique</h1>
     <div class="boutique-card">
-        <article>
-            <img src="{{ asset('build/user.jpg') }}" alt="">
-            <h2>125 cr 1989</h2>
-            <p>800€</p>
-            <a href="">Leboncoin</a>
-        </article>
-        <article>
-            <img src="{{ asset('build/user.jpg') }}" alt="">
-            <h2>125 cr 1989</h2>
-            <p>800€</p>
-            <a href="">Leboncoin</a>
-        </article>
-        <article>
-            <img src="{{ asset('build/user.jpg') }}" alt="">
-            <h2>125 cr 1989</h2>
-            <p>800€</p>
-            <a href="">Leboncoin</a>
-        </article>
-        <article>
-            <img src="{{ asset('build/user.jpg') }}" alt="">
-            <h2>125 cr 1989</h2>
-            <p>800€</p>
-            <a href="">Leboncoin</a>
-        </article>
-        <article>
-            <img src="{{ asset('build/user.jpg') }}" alt="">
-            <h2>125 cr 1989</h2>
-            <p>800€</p>
-            <a href="">Leboncoin</a>
-        </article>
-        <article>
-            <img src="{{ asset('build/user.jpg') }}" alt="">
-            <h2>125 cr 1989</h2>
-            <p>800€</p>
-            <a href="">Leboncoin</a>
-        </article>
+        {% for boutique in boutiques %}
+            <article>
+                <img src="{{ asset('uploads/img/'~boutique.img) }}" alt="">
+                <h2>{{ boutique.titre }}</h2>
+                <p>{{ boutique.prix }}€</p>
+                <a href="{{ boutique.link }}">Leboncoin</a>
+            </article>
+        {% endfor %}
     </div>
 </section>
 {#Footer#}
